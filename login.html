@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Noir-U</title>
+</head>
+<body>
+    <div id="login" style="display: block;">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="authenticate()">Login</button>
+    </div>
+
+    <div id="app" style="display: none;">
+        <div class="v1_2">
+            <div class="v1_24"></div>
+            <div class="v1_8">
+                <button class="v1_7" onclick="OpenFiles()">
+                    <span class="v1_6">Files</span>
+                    <span class="v1_5">F</span>
+                </button>
+            </div>
+        </div>
+        <div class="v1_9">
+            <button class="v1_10" onclick="OpenNotes()">
+                <span class="v1_11">Notes</span>
+                <span class="v1_12">N</span>
+            </button>
+        </div>
+        <div class="v2_25">
+            <button class="v2_26" onclick="OpenCalculator()">
+                <span class="v2_27">Calculator</span>
+                <span class="v2_28">N</span>
+            </button>
+        </div>
+        <div class="v2_30">
+            <button class="v2_31" onclick="OpenBrowser()">
+                <span class="v2_32">Browser</span>
+                <span class="v2_33">B</span>
+            </button>
+        </div>
+        <div class="v1_17"></div>
+        <div class="v2_34"></div>
+        <div class="name"></div>
+        <span class="v5_68">Noir-U</span>
+    </div>
+
+    <!-- Files -->
+    <div id="filee" style="display:none" >
+        <div id="fileeheader">Files</div>
+        <div id="whitebox">
+            <label for="avatar">A text (txt) will go to Notes</label><br>
+            <input type="file"
+               id="input-file" name="avatar"
+               accept="text/plain"
+               multiple>
+        </div>
+    </div>
+
+    <!-- Browser -->
+    <div id="brow" style="display:none">
+        <!-- Conteúdo do Browser -->
+    </div>
+
+    <!-- Bloco de notas -->
+    <div id="note" style="display:none">
+        <!-- Conteúdo do Bloco de notas -->
+    </div>
+
+    <!-- Calculadora -->
+    <div id="calcula" style="display:none">
+        <!-- Conteúdo da Calculadora -->
+    </div>
+
+    <script src="autenticacao.js"></script>
+</body>
+</html>

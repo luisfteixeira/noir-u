@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity=
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity=
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+<link href="./css/main.css" rel="stylesheet" />
+<title>Noir-U</title>
+</head>
+<body>
+
+<div class="v1_2">
+
+<div class="v1_24">
+
+</div>
+    <div class="v1_8">
+    <button class="v1_7" onclick="OpenFiles()">
+    <span class="v1_6">Files</span>
+    <span class="v1_5">F</span>
+</div>
+
+</div>
+    <div class="v1_9">
+    <button class="v1_10" onclick="OpenNotes()">
+    <span class="v1_11">Notes</span>
+    <span class="v1_12">N</span>
+</div>
+
+
+</div>
+    <div class="v2_25">
+    <button class="v2_26" onclick="OpenCalculator()">
+    <span class="v2_27">Calculator</span>
+    <span class="v2_28">N</span>
+</div>
+
+
+
+</div>
+    <div class="v2_30">
+    <button class="v2_31" onclick="OpenBrowser()">
+    <span class="v2_32">Browser</span>
+    <span class="v2_33">B</span>
+</div>
+
+
+
+</div>
+    <div class="v1_17">
+</div>
+
+</div>
+    <div class="v2_34">
+</div>
+    <div class="name">
+
+</div>
+    <img src="logo.png" alt="image" width="250px" height="300px" style="left: 5%; top: 0%; position: absolute" width="56" height="64">
+</div>
+
+<!-- Files -->
+<div id="filee" style="display:none" >
+    <div id="fileeheader">Files</div>
+    <div id="whitebox">
+        <label for="avatar">A text (txt) will go to Notes</label><br>
+        <input type="file"
+           id="input-file" name="avatar"
+           accept="text/plain"
+           multiple>
+    </div>
+</div>
+
+
+<!-- Browser -->
+<div id="brow" style="display:none" >
+    <div id="browheader">Browser</div>
+    <iframe src="https://www.google.com/search?igu=1" width="960" height="540"></iframe>
+</div>
+
+<!-- Bloco de notas -->
+<div id="note" style="display:none" >
+<div id="noteheader">Notes</div>
+<textarea id="nn" name="story" rows="5" cols="33" placeholder="Type here...">
+</textarea>
+</div>
+
+<!-- Calculadora -->
+<div id="calcula" style="display:none" >
+    <div id="calculaheader">Calculator</div>
+    <table id="calcu">
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" value="c" onclick="clr()" /> </td>
+        </tr>
+        <tr>
+
+            <td><input type="button" value="1" onclick="dis('1')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="2" onclick="dis('2')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="3" onclick="dis('3')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="/" onclick="dis('/')" 
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="5" onclick="dis('5')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="6" onclick="dis('6')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="*" onclick="dis('*')" 
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="8" onclick="dis('8')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="9" onclick="dis('9')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="-" onclick="dis('-')"
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="dis('0')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="." onclick="dis('.')" 
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="=" onclick="solve()"> </td>
+  
+            <td><input type="button" value="+" onclick="dis('+')" 
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
