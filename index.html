@@ -46,6 +46,7 @@
     </style>
 </head>
 <body>
+
     <div id="login" style="display: block;">
         <img src="logo.png" alt="image" width="60%" height="60%" style="left: 20%; top: -13%; position: absolute" width="56" height="64">
         <br><br><br>
@@ -54,9 +55,9 @@
         <br><br>
         <input type="password" id="password" placeholder="Senha">
         <br><br>
-        <button onclick="authenticate()">Enviar</button>
+        <button onclick="authenticate(); return false">Enviar</button>
     </div>
     <script src="js/bcrypt.js"></script>
-    <script src="autenticacao.js"></script>
+    <script src="authenticate.js"></script>
 </body>
 </html>
